@@ -11,8 +11,5 @@ A crypto-native development studio.
 
 ## Projects in Production
 
-*  **East India Onchain Company** - Curated DeFi Yield Dashboard (https://eastindiaonchaincompany.com)
 *  **Ultra Sound Apps** - Web3 Apps Customisable Dashboard (https://ultrasoundapps.com/)
-*  **The Yield Bearer** - DeFi Farming with real portfolios (https://theyieldbearer.com)
 *  **SaylorMemes** - Favourite Michael Saylor memes (https://saylormemes.com/)
-*  **The Trade Winds** - DeFi Yield Newsletter (https://thetradewinds.substack.com/)
