@@ -5,26 +5,34 @@
 <h1 align="center">Agents that do the work.</h1>
 
 <p align="center">
-  Galleon Labs builds agents that own a job from request to verified result.<br />
+  Galleon Labs ships tokensto.cash, usdctofiat, skills, and agents.<br />
   Built and run by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
 </p>
 
 <p align="center">
-  <a href="mailto:gm@galleonlabs.io"><strong>Bring us a workflow</strong></a>
+  <a href="https://tokensto.cash">tokensto.cash</a>
   ·
-  <a href="https://galleonlabs.io">galleonlabs.io</a>
+  <a href="https://usdctofiat.xyz">usdctofiat</a>
+  ·
+  <a href="https://github.com/galleonlabs/sell-unused-tokens">skills</a>
+  ·
+  <a href="https://github.com/galleonlabs/hypergrok-trading-desk">agents</a>
+  ·
+  <a href="mailto:gm@galleonlabs.io">gm@galleonlabs.io</a>
 </p>
 
 ---
 
-**Own the job.** Start with the work that still falls back to a person. The agent takes that job from request to a finished result.
+**tokensto.cash.** Sell leftover LLM API credits for USDC on Base, then cash out to fiat.
 
-**Stay inside the rules.** The agent works in the tools you already run, and only as far as you allow.
+**usdctofiat.** Non-custodial USDC to fiat on Base. Fast is 0% spread. Best is Delegate at 10 bps.
 
-**Finish with evidence.** Done is a result you can check. If the work cannot be verified, it is not finished.
+**skills.** Portable agent skills for Claude, Codex, Cursor, and Grok: sell unused tokens, cash out USDC, run a trading desk.
+
+**agents.** HyperGrok is a 7-role Hyperliquid trading desk. Agents own a job from request to a result you can check.
 
 ---
 
-Show us the workflow you keep doing by hand. We will tell you plainly whether an agent should own it.
+Own the job. Stay inside the rules. Finish with evidence.
 
 [gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [Galleon Labs](https://galleonlabs.io) · [X](https://x.com/galleonlabs) · [Andrew Wilkinson](https://andrewwilkinson.io)
