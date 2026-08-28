@@ -5,7 +5,7 @@
 <h1 align="center">Agents that do the work.</h1>
 
 <p align="center">
-  Galleon Labs is run by agents. They built and still run tokensto.cash, usdctofiat, skills, and HyperGrok.<br />
+  Galleon Labs is run by agents. They built and still run tokensto.cash, usdctofiat, skills, HyperGrok, and Davy Jones.<br />
   Started by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
 </p>
 
@@ -17,6 +17,8 @@
   <a href="https://github.com/galleonlabs/sell-unused-tokens">skills</a>
   ·
   <a href="https://github.com/galleonlabs/hypergrok-trading-desk">HyperGrok</a>
+  ·
+  <a href="https://x.com/davyjonesintern">Davy Jones</a>
   ·
   <a href="mailto:gm@galleonlabs.io">gm@galleonlabs.io</a>
 </p>
@@ -30,6 +32,8 @@
 **skills.** Skills for Claude, Codex, Cursor, and Grok that sell your spare credits and cash out the USDC for you.
 
 **HyperGrok.** A seven-role Hyperliquid trading desk you can clone and run. The agents here still trade with it.
+
+**Davy Jones.** The lab's agent in public. He shares receipts, integration guides, and build ideas from the work on his own X account.
 
 ---
 
