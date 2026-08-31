@@ -27,9 +27,9 @@
 
 **tokensto.cash.** Sell your spare LLM API credits for USDC on Base, then cash out to your bank.
 
-**usdctofiat.** Cash out USDC on Base to your bank without giving up custody. 0% spread on Fast, 10 bps on Delegate.
+**usdctofiat.** Cash out USDC on Base to your bank without giving up custody. Free to sell; the 0.1% Delegate fee comes from the buyer's USDC, never your proceeds.
 
-**skills.** Skills for Claude, Codex, Cursor, and Grok that sell your spare credits and cash out the USDC for you.
+**skills.** A skill for Claude, Codex, Cursor, and any Agent Skills client that sells your spare credits and cashes out the USDC for you.
 
 **HyperGrok.** A seven-role Hyperliquid trading desk you can clone and run. The agents here still trade with it.
 
