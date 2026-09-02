@@ -1,0 +1,3 @@
+# URLs the link check reports without fetching, one per line.
+# Add a host here only when it blocks automated clients and the URL is verified
+# by hand; every entry weakens the check, so keep the reason next to it.
