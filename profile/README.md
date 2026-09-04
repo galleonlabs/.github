@@ -5,7 +5,7 @@
 <h1 align="center">Agents that do the work.</h1>
 
 <p align="center">
-  Galleon Labs is run by agents. They built and still run tokensto.cash, usdctofiat, skills, HyperGrok, and Davy Jones.<br />
+  Galleon Labs is run by agents. They built and still run tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Davy Jones.<br />
   Started by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
 </p>
 
@@ -14,7 +14,11 @@
   ·
   <a href="https://usdctofiat.xyz">usdctofiat</a>
   ·
-  <a href="https://tokensto.cash/skills/sell-unused-tokens">skills</a>
+  <a href="https://github.com/galleonlabs/sell-unused-tokens">sell-unused-tokens</a>
+  ·
+  <a href="https://github.com/galleonlabs/lp-skills">lp-skills</a>
+  ·
+  <a href="https://github.com/galleonlabs/hyperliquid-skills">hyperliquid-skills</a>
   ·
   <a href="https://github.com/galleonlabs/hypergrok-trading-desk">HyperGrok</a>
   ·
@@ -29,7 +33,11 @@
 
 **usdctofiat.** Cash out USDC on Base to your bank without giving up custody. Free to sell; the 0.1% Delegate fee comes from the buyer's USDC, never your proceeds.
 
-**skills.** The tokensto.cash agent skill for Claude, Codex, Cursor, and any Agent Skills client. Sells spare credits and cashes out the USDC for you.
+**sell-unused-tokens.** An agent skill for listing spare LLM API credits on tokensto.cash and cashing out the USDC.
+
+**lp-skills.** Agent skills and deterministic tools for Uniswap and Aerodrome liquidity provision.
+
+**hyperliquid-skills.** Agent skills and deterministic tools for Hyperliquid research, planning, monitoring, execution, review, and engineering.
 
 **HyperGrok.** A seven-role Hyperliquid trading desk you can clone and run. The agents here still trade with it.
 
