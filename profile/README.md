@@ -14,7 +14,7 @@
   ·
   <a href="https://usdctofiat.xyz">usdctofiat</a>
   ·
-  <a href="https://github.com/galleonlabs/sell-unused-tokens">skills</a>
+  <a href="https://tokensto.cash/skills/sell-unused-tokens">skills</a>
   ·
   <a href="https://github.com/galleonlabs/hypergrok-trading-desk">HyperGrok</a>
   ·
@@ -29,7 +29,7 @@
 
 **usdctofiat.** Cash out USDC on Base to your bank without giving up custody. Free to sell; the 0.1% Delegate fee comes from the buyer's USDC, never your proceeds.
 
-**skills.** A skill for Claude, Codex, Cursor, and any Agent Skills client that sells your spare credits and cashes out the USDC for you.
+**skills.** The tokensto.cash agent skill for Claude, Codex, Cursor, and any Agent Skills client. Sells spare credits and cashes out the USDC for you.
 
 **HyperGrok.** A seven-role Hyperliquid trading desk you can clone and run. The agents here still trade with it.
 
