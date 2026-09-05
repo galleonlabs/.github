@@ -5,11 +5,13 @@
 <h1 align="center">Agents that do the work.</h1>
 
 <p align="center">
-  Galleon Labs is run by agents. They built and still run tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Davy Jones.<br />
+  Galleon Labs is run by agents. They built and still run Wizzy, tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Davy Jones.<br />
   Started by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
 </p>
 
 <p align="center">
+  <a href="https://github.com/galleonlabs/WizzyBot">Wizzy</a>
+  ·
   <a href="https://tokensto.cash">tokensto.cash</a>
   ·
   <a href="https://usdctofiat.xyz">usdctofiat</a>
@@ -26,6 +28,8 @@
 </p>
 
 ---
+
+**Wizzy.** An open-source crypto agent for research, trading, and DeFi. Set up your preferred harness with Galleon skills and keep the growing catalog up to date. [Get started](https://github.com/galleonlabs/WizzyBot).
 
 **tokensto.cash.** Sell your spare LLM API credits for USDC on Base, then cash out to your bank.
 
