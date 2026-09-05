@@ -32,7 +32,7 @@
 | Project | What you can do |
 | --- | --- |
 | [Boomkin](https://github.com/galleonlabs/boomkin) | Set up a native Hermes DeFi agent with modular Galleon skill packs and official tool connections. |
-| [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) | Install independent skills for DeFi primitives, data and infrastructure. |
+| [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) | Install fourteen independent DeFi skill packs for liquidity, Hyperliquid, lending, yield and related workflows. |
 | [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC on Base, then cash out to your bank. |
 | [usdctofiat](https://usdctofiat.xyz) | Cash out USDC on Base to your bank without giving up custody. |
 | [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) | Clone and run a seven-role Hyperliquid trading desk. |
