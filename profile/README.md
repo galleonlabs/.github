@@ -14,8 +14,6 @@
   ·
   <a href="https://usdctofiat.xyz">usdctofiat</a>
   ·
-  <a href="https://github.com/galleonlabs/sell-unused-tokens">sell-unused-tokens</a>
-  ·
   <a href="https://github.com/galleonlabs/lp-skills">lp-skills</a>
   ·
   <a href="https://github.com/galleonlabs/hyperliquid-skills">hyperliquid-skills</a>
@@ -32,8 +30,6 @@
 **tokensto.cash.** Sell your spare LLM API credits for USDC on Base, then cash out to your bank.
 
 **usdctofiat.** Cash out USDC on Base to your bank without giving up custody. Free to sell; the 0.1% Delegate fee comes from the buyer's USDC, never your proceeds.
-
-**sell-unused-tokens.** An agent skill for listing spare LLM API credits on tokensto.cash and cashing out the USDC.
 
 **lp-skills.** Agent skills and deterministic tools for Uniswap and Aerodrome liquidity provision.
 
