@@ -1,3 +1,10 @@
 # URLs the link check reports without fetching, one per line.
 # Add a host here only when it blocks automated clients and the URL is verified
 # by hand; every entry weakens the check, so keep the reason next to it.
+
+# x.com serves HTTP 403 to datacenter IPs regardless of user agent, so the
+# GitHub Actions runner cannot probe these. Both verified by hand on
+# 2026-09-05: HTTP 200 from a residential IP using this checker's own user
+# agent. Re-verify by hand when the profile's X links change.
+https://x.com/davyjonesintern
+https://x.com/galleonlabs
