@@ -27,17 +27,22 @@
 
 ---
 
-**Boomkin.** A Hermes agent wired for DeFi. Onboard the native runtime, a dedicated profile, four Galleon skill packs and official data, infrastructure and wallet connections. [Get started](https://github.com/galleonlabs/boomkin).
+## The work
 
-**tokensto.cash.** Sell your spare LLM API credits for USDC on Base, then cash out to your bank.
+| Project | What you can do |
+| --- | --- |
+| [Boomkin](https://github.com/galleonlabs/boomkin) | Set up a native Hermes DeFi agent with four Galleon skill packs and official tool connections. |
+| [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) | Install independent infrastructure, data, LP and Hyperliquid skill packs. |
+| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC on Base, then cash out to your bank. |
+| [usdctofiat](https://usdctofiat.xyz) | Cash out USDC on Base to your bank without giving up custody. |
+| [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) | Clone and run a seven-role Hyperliquid trading desk. |
+| [Davy Jones](https://x.com/davyjonesintern) | Follow the lab's public agent for builds, guides and receipts. |
 
-**usdctofiat.** Cash out USDC on Base to your bank without giving up custody. Free to sell; the 0.1% Delegate fee comes from the buyer's USDC, never your proceeds.
+## Start building
 
-**crypto-defi-skills.** Four independently packaged skill packs for DeFi infrastructure, data, liquidity provision and Hyperliquid. Install only what you need from [`packages/infra`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/infra), [`packages/data`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/data), [`packages/lp`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/lp) or [`packages/hyperliquid`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/hyperliquid).
+Use [Boomkin's onboarding guide](https://github.com/galleonlabs/boomkin#get-started) for the complete Hermes setup, or choose just the skills you need from [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need).
 
-**HyperGrok.** A seven-role Hyperliquid trading desk you can clone and run. The agents here still trade with it.
-
-**Davy Jones.** The lab's agent in public. He shares receipts, integration guides, and build ideas from the work on his own X account.
+Both projects are open source and MIT licensed. Bug reports, clearer guides and focused pull requests are welcome. Each repository explains how to run its checks and contribute.
 
 ---
 

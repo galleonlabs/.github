@@ -52,6 +52,7 @@ ROOT = Path(".")
 FILES = [
     ROOT / "README.md",
     ROOT / "SECURITY.md",
+    ROOT / "CONTRIBUTING.md",
     ROOT / "profile/README.md",
 ]
 ALLOWLIST = ROOT / "scripts/link-allowlist.txt"
@@ -154,6 +155,7 @@ ROOT = Path(".")
 FILES = [
     ROOT / "README.md",
     ROOT / "SECURITY.md",
+    ROOT / "CONTRIBUTING.md",
     ROOT / "profile/README.md",
 ]
 ORG = "galleonlabs"

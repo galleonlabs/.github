@@ -1,24 +1,36 @@
-# .github
+# Galleon Labs on GitHub
 
-Organisation-wide GitHub files for [Galleon Labs](https://galleonlabs.io).
+**The shared profile and community files for Galleon Labs.**
 
-- `profile/README.md` — the organisation profile GitHub renders at
-  [github.com/galleonlabs](https://github.com/galleonlabs). GitHub reads this exact
-  path; moving or renaming it silently falls back to this file.
-- `SECURITY.md` — the default security policy for every public repository in the
-  organisation that does not ship its own.
+[Organisation](https://github.com/galleonlabs) · [Website](https://galleonlabs.io) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
-## Validation
+## What lives here
 
-The `validate` workflow gates this repo: the profile renders from the path GitHub
-reads and carries its lockup, every public URL in the tracked markdown still
-responds, and every Galleon Labs repository the markdown links is still public,
-unarchived, and named the way we link it. github.com answers `200` for an archived
-repository and follows a rename, so the last check reads repository status from the
-public GitHub API instead. The lockup, the product links, and those repositories all
-live off this repository, so the check also runs daily and drift surfaces without
-waiting for a commit. Run it locally with `bash scripts/validate.sh`. A passing merge
-to `main` is the release.
+| File | Purpose |
+| --- | --- |
+| [profile/README.md](profile/README.md) | The public organisation profile shown at [github.com/galleonlabs](https://github.com/galleonlabs) |
+| [SECURITY.md](SECURITY.md) | Default security reporting guidance for public repositories without their own policy |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Shared contributor guidance; individual repositories can provide their own |
+| [scripts/validate.sh](scripts/validate.sh) | Profile structure, images, public links and linked repository status |
 
-Add a URL to `scripts/link-allowlist.txt` only when a host blocks automated
-clients and the link is verified by hand.
+GitHub reads the organisation profile from the exact path `profile/README.md`. Keep that path and the lockup image intact when updating the introduction or work list.
+
+## Make a change
+
+Use the current product name, a short factual description and its canonical public link. Product-specific setup instructions belong in the product repository. The shared visual identity lives in the [public brand kit](https://galleonlabs.io/brand).
+
+Run validation before sending a pull request:
+
+```bash
+bash scripts/validate.sh
+```
+
+The check verifies the profile file, its lockup image and public URLs. It also uses GitHub's API to confirm that linked Galleon repositories are public, unarchived and named correctly; a successful redirect alone does not establish that. CI runs on changes and daily, since external images and links can break without a repository edit. Add an exception to `scripts/link-allowlist.txt` only when a host blocks automated clients and the link has been verified manually.
+
+A passing change on `main` is the release. Check the rendered [organisation page](https://github.com/galleonlabs) after publishing profile changes.
+
+## Get involved
+
+Start with [Boomkin](https://github.com/galleonlabs/boomkin) for a Hermes DeFi agent, or [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) for individual skill packs. Bug reports, documentation improvements and focused pull requests are welcome in the relevant repository.
+
+These shared files are [MIT licensed](LICENSE). For general feedback, contact [gm@galleonlabs.io](mailto:gm@galleonlabs.io).
