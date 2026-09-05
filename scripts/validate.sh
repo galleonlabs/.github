@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Required check: the organisation profile still renders and every public URL this
-# repository publishes still responds. The profile page is assembled by GitHub from
-# profile/README.md and pulls its lockup from galleonlabs.io, so both can break with
-# no commit here. No repository secrets. No network except the extracted public URLs.
+# Required check: the organisation profile still renders, every public URL this
+# repository publishes still responds, and every Galleon Labs repository it links is
+# still live under the name we advertise. The profile page is assembled by GitHub from
+# profile/README.md and pulls its lockup from galleonlabs.io, so all three can break
+# with no commit here. No repository secrets. No network except the extracted public
+# URLs and the public GitHub API.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -138,16 +140,119 @@ sys.exit(1 if failed else 0)
 PY
 }
 
+repos() {
+  python3 - <<'PY'
+import json
+import os
+import re
+import sys
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(".")
+FILES = [
+    ROOT / "README.md",
+    ROOT / "SECURITY.md",
+    ROOT / "profile/README.md",
+]
+ORG = "galleonlabs"
+USER_AGENT = "galleonlabs-dot-github-repo-check/1.0"
+TRAILING = ".,;:)]}'\""
+REPO_RE = re.compile(rf"https?://(?:www\.)?github\.com/{ORG}/([A-Za-z0-9._-]+)")
+
+# github.com answers 200 for an archived repository and follows a rename, so link
+# health alone cannot tell that the profile is advertising retired or stale work.
+# The public API reports both, plus the canonical name to compare the link against.
+
+
+def extract() -> dict[str, list[str]]:
+    found: dict[str, list[str]] = {}
+    for path in FILES:
+        if not path.is_file():
+            print(f"{path}: missing", file=sys.stderr)
+            sys.exit(1)
+        text = path.read_text(encoding="utf-8")
+        for match in REPO_RE.finditer(text):
+            name = match.group(1).rstrip(TRAILING)
+            if name:
+                found.setdefault(name, []).append(path.as_posix())
+    return found
+
+
+def fetch(name: str) -> dict:
+    headers = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
+    # Actions supplies GITHUB_TOKEN so the shared runner IP is not rate limited;
+    # a local run without one still fits comfortably in the anonymous budget.
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    request = urllib.request.Request(
+        f"https://api.github.com/repos/{ORG}/{name}",
+        method="GET",
+        headers=headers,
+    )
+    with urllib.request.urlopen(request, timeout=20) as response:
+        return json.load(response)
+
+
+names = extract()
+if not names:
+    print(f"no github.com/{ORG} repository links found in tracked markdown", file=sys.stderr)
+    sys.exit(1)
+
+failed = 0
+for name in sorted(names, key=str.lower):
+    sources = ", ".join(sorted(set(names[name])))
+    try:
+        repo = fetch(name)
+    except urllib.error.HTTPError as exc:
+        # 404 covers deleted and private alike; either way the link is not public work.
+        detail = "not public" if exc.code == 404 else f"HTTP {exc.code}"
+        print(f"FAIL  {ORG}/{name}  ({sources})  {detail}", file=sys.stderr)
+        failed += 1
+        continue
+    except Exception as exc:
+        # An unreadable API is a reportable gap, never a silent pass.
+        print(f"FAIL  {ORG}/{name}  ({sources})  repository status unavailable: {exc}", file=sys.stderr)
+        failed += 1
+        continue
+
+    canonical = str(repo.get("full_name", ""))
+    if canonical.lower() != f"{ORG}/{name}".lower():
+        print(
+            f"FAIL  {ORG}/{name}  ({sources})  renamed to {canonical or 'unknown'}; link the current name",
+            file=sys.stderr,
+        )
+        failed += 1
+        continue
+    if repo.get("private"):
+        print(f"FAIL  {ORG}/{name}  ({sources})  private", file=sys.stderr)
+        failed += 1
+        continue
+    if repo.get("archived"):
+        print(f"FAIL  {ORG}/{name}  ({sources})  archived; the profile lists it as live work", file=sys.stderr)
+        failed += 1
+        continue
+    print(f"live  {ORG}/{name}  ({sources})")
+
+print(f"checked {len(names)} linked {ORG} repositor{'y' if len(names) == 1 else 'ies'}; {failed} failed")
+sys.exit(1 if failed else 0)
+PY
+}
+
 cmd=${1:-all}
 case "$cmd" in
   profile) profile ;;
   links) links ;;
+  repos) repos ;;
   all)
     profile
     links
+    repos
     ;;
   *)
-    echo "usage: $0 [all|profile|links]" >&2
+    echo "usage: $0 [all|profile|links|repos]" >&2
     exit 2
     ;;
 esac
