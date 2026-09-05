@@ -53,6 +53,7 @@ FILES = [
     ROOT / "README.md",
     ROOT / "SECURITY.md",
     ROOT / "CONTRIBUTING.md",
+    ROOT / "ATTRIBUTION.md",
     ROOT / "profile/README.md",
 ]
 ALLOWLIST = ROOT / "scripts/link-allowlist.txt"
@@ -156,6 +157,7 @@ FILES = [
     ROOT / "README.md",
     ROOT / "SECURITY.md",
     ROOT / "CONTRIBUTING.md",
+    ROOT / "ATTRIBUTION.md",
     ROOT / "profile/README.md",
 ]
 ORG = "galleonlabs"

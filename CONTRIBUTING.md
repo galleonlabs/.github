@@ -23,3 +23,7 @@ For a substantial addition, discuss the user need before implementing it. Small 
 Explain the result and the checks you ran. Include screenshots for visual changes and current primary sources for protocol or provider claims. State any remaining limitation plainly.
 
 For changes here, run `bash scripts/validate.sh` and inspect the rendered profile when its layout changes. Contributions to these shared files use the [MIT license](LICENSE); other repositories follow their own licenses.
+
+## Credit and reuse
+
+Retain existing authorship and license notices in contributions and derived work. [ATTRIBUTION.md](ATTRIBUTION.md) explains MIT notice requirements and offers an optional visible credit line.

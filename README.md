@@ -34,3 +34,9 @@ A passing change on `main` is the release. Check the rendered [organisation page
 Start with [Boomkin](https://github.com/galleonlabs/boomkin) for a Hermes DeFi agent, or [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) for individual skill packs. Bug reports, documentation improvements and focused pull requests are welcome in the relevant repository.
 
 These shared files are [MIT licensed](LICENSE). For general feedback, contact [gm@galleonlabs.io](mailto:gm@galleonlabs.io).
+
+## License and credit
+
+[MIT licensed](LICENSE), with the copyright and permission notice retained when reusing copies or substantial portions. Created by [Andrew Wilkinson](https://andrewwilkinson.io) and [Galleon Labs](https://github.com/galleonlabs).
+
+See [reuse and attribution](ATTRIBUTION.md) for a ready-to-copy credit line. If Galleon Labs community files helps your work, [a star on the original repository](https://github.com/galleonlabs/.github) is appreciated and entirely optional.
