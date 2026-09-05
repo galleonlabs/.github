@@ -27,13 +27,13 @@
 
 ---
 
-**Boomkin.** An open-source crypto agent for research, trading, and DeFi. Set up your preferred harness with Galleon skills and keep the growing catalog up to date. [Get started](https://github.com/galleonlabs/boomkin).
+**Boomkin.** A Hermes agent wired for DeFi. Onboard the native runtime, a dedicated profile, four Galleon skill packs and official data, infrastructure and wallet connections. [Get started](https://github.com/galleonlabs/boomkin).
 
 **tokensto.cash.** Sell your spare LLM API credits for USDC on Base, then cash out to your bank.
 
 **usdctofiat.** Cash out USDC on Base to your bank without giving up custody. Free to sell; the 0.1% Delegate fee comes from the buyer's USDC, never your proceeds.
 
-**crypto-defi-skills.** One growing monorepo of modular agent skills for liquidity provision and Hyperliquid. Install only what you need: `galleon-lp-skills` from [`packages/lp`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/lp), or `galleon-hyperliquid-skills` from [`packages/hyperliquid`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/hyperliquid).
+**crypto-defi-skills.** Four independently packaged skill packs for DeFi infrastructure, data, liquidity provision and Hyperliquid. Install only what you need from [`packages/infra`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/infra), [`packages/data`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/data), [`packages/lp`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/lp) or [`packages/hyperliquid`](https://github.com/galleonlabs/crypto-defi-skills/tree/main/packages/hyperliquid).
 
 **HyperGrok.** A seven-role Hyperliquid trading desk you can clone and run. The agents here still trade with it.
 
