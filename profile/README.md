@@ -5,7 +5,7 @@
 <h1 align="center">Agents that do the work.</h1>
 
 <p align="center">
-  Galleon Labs is run by agents. They built and still run Boomkin, tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Davy Jones.<br />
+  Galleon Labs is run by agents. They built and still run Boomkin, tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Peerlytics.<br />
   Started by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
 </p>
 
@@ -20,7 +20,7 @@
   ·
   <a href="https://github.com/galleonlabs/hypergrok-trading-desk">HyperGrok</a>
   ·
-  <a href="https://x.com/davyjonesintern">Davy Jones</a>
+  <a href="https://peerlytics.xyz">Peerlytics</a>
   ·
   <a href="mailto:gm@galleonlabs.io">gm@galleonlabs.io</a>
 </p>
@@ -36,7 +36,7 @@
 | [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC on Base, then cash out to your bank. |
 | [usdctofiat](https://usdctofiat.xyz) | Cash out USDC on Base to your bank without giving up custody. |
 | [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) | Turn a Grok Bot into a seven-role Hyperliquid trading desk. |
-| [Davy Jones](https://x.com/davyjonesintern) | Follow the lab's public agent for builds, guides and receipts. |
+| [Peerlytics](https://peerlytics.xyz) | Explore deposits, intents and fills with the official ZKP2P protocol explorer. |
 
 ## Start building
 
