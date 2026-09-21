@@ -40,9 +40,17 @@
 
 ## Start building
 
-Use [Boomkin's onboarding guide](https://github.com/galleonlabs/boomkin#get-started) for the complete Hermes setup, or choose just the skills you need from [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need).
+Choose the setup that fits how you work:
 
-Both projects are open source and MIT licensed. When reusing their work, keep the copyright and license notice. A source link crediting Andrew Wilkinson and Galleon Labs, or a star on a project you find useful, is appreciated. Bug reports, clearer guides and focused pull requests are welcome. Each repository explains how to run its checks and contribute.
+| Starting point | Guide |
+| --- | --- |
+| I want a dedicated DeFi agent in Hermes | [Set up Boomkin](https://github.com/galleonlabs/boomkin#get-started) |
+| I already have an agent and need specific DeFi workflows | [Install only the skills you need](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need) |
+| I use Grok Bot and want a Hyperliquid research desk | [Start HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start) |
+
+Start with public research or an unsigned plan. Tool authentication and any financial action remain separate choices.
+
+These projects are open source and MIT licensed. When reusing their work, keep the copyright and license notice. A source link crediting Andrew Wilkinson and Galleon Labs, or a star on a project you find useful, is appreciated. Bug reports, clearer guides and focused pull requests are welcome. Each repository explains how to run its checks and contribute.
 
 ---
 
