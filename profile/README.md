@@ -54,4 +54,4 @@ These projects are open source and MIT licensed. When reusing their work, keep t
 
 ---
 
-[gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [Galleon Labs](https://galleonlabs.io) · [X](https://x.com/galleonlabs) · [Andrew Wilkinson](https://andrewwilkinson.io)
+[gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [Galleon Labs](https://galleonlabs.io) · [Andrew Wilkinson](https://andrewwilkinson.io)
