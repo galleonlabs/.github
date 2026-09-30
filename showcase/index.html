@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galleon Labs products, read-only research plugins and public source. An agentic lab.">
+  <title>Galleon Labs · Products and research</title>
+  <style>
+    :root{color-scheme:light;--ink:#0b0b0c;--bone:#f4f1ea;--ember:#c45c26;--graphite:#2a2a2a}
+    *{box-sizing:border-box}body{margin:0;background:var(--bone);color:var(--ink);font:17px/1.65 system-ui,sans-serif}a{color:inherit;text-underline-offset:4px}a:hover{color:var(--ember)}a:focus-visible{outline:3px solid var(--ember);outline-offset:5px}header,main,footer{max-width:1080px;margin:auto;padding:32px}header{display:flex;justify-content:space-between;align-items:center;gap:24px;border-bottom:1px solid #bcb6aa}header img{max-width:260px;width:100%;height:auto}nav{display:flex;gap:24px}h1,h2,h3{font-family:Georgia,serif;line-height:1.1;letter-spacing:-.025em}h1{font-size:clamp(50px,8vw,90px);max-width:760px;margin:32px 0}h2{font-size:36px;margin-top:56px}h3{font-size:29px;margin:0 0 12px}.intro{max-width:680px;font-size:21px}.label{font:12px/1.5 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--graphite)}.products{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}.products article{border-top:1px solid #bcb6aa;padding:28px 0}.products p{margin:12px 0}.links{display:flex;gap:20px;flex-wrap:wrap}.research{border-top:2px solid var(--ink);margin-top:28px;padding-top:24px}.research article{margin:28px 0}.note{max-width:760px;color:var(--graphite);font-size:15px}footer{border-top:1px solid #bcb6aa;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer p{margin:0}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:var(--bone);padding:12px} @media(max-width:650px){header,main,footer{padding:24px}header{align-items:flex-start;flex-direction:column}.products{grid-template-columns:1fr}h1{margin-top:24px}nav{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to products</a>
+  <header>
+    <a href="https://galleonlabs.io" aria-label="Galleon Labs home"><img src="https://galleonlabs.io/brand/assets/lockup-ink" alt="Galleon Labs" width="260" height="56"></a>
+    <nav aria-label="Primary"><a href="#products">Products</a><a href="#research">Research</a><a href="https://github.com/galleonlabs">Source</a></nav>
+  </header>
+  <main id="main">
+    <p class="label">An agentic lab.</p>
+    <h1>Products you can use.<br>Results you can check.</h1>
+    <p class="intro">Galleon Labs is run by agents. These are the public products and research tools they built and keep running.</p>
+    <h2 id="products">The work.</h2>
+    <div class="products">
+      <article><h3>Peerlytics</h3><p>The official ZKP2P protocol explorer. Explore deposits, intents and fills, then follow the evidence to the original receipt.</p><p class="links"><a href="https://peerlytics.xyz">Open explorer</a><a href="https://peerlytics.xyz/support">Get support</a></p></article>
+      <article><h3>Boomkin</h3><p>A Hermes agent wired for DeFi, with modular Galleon skill packs and official tool connections.</p><p class="links"><a href="https://github.com/galleonlabs/boomkin#get-started">Set up Boomkin</a><a href="https://github.com/galleonlabs/boomkin/releases/tag/v0.7.3">Release 0.7.3</a></p></article>
+      <article><h3>tokensto.cash</h3><p>Sell spare LLM API credits for USDC on Base.</p><p class="links"><a href="https://tokensto.cash">Open tokensto.cash</a></p></article>
+      <article><h3>USDCtoFiat</h3><p>Cash out USDC to your bank.</p><p class="links"><a href="https://usdctofiat.xyz">Open USDCtoFiat</a></p></article>
+      <article><h3>crypto-defi-skills</h3><p>Fourteen independently installable skill packs for DeFi agents. Choose the workflows you need.</p><p class="links"><a href="https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need">Install skills</a><a href="https://github.com/galleonlabs/crypto-defi-skills/issues">Report an issue</a></p></article>
+      <article><h3>HyperGrok</h3><p>A seven-role Hyperliquid trading desk for Grok Bot.</p><p class="links"><a href="https://github.com/galleonlabs/hypergrok-trading-desk#start">Read the setup guide</a></p></article>
+    </div>
+    <section class="research" aria-labelledby="research">
+      <p class="label">Read-only tools</p><h2 id="research">Research with a source.</h2>
+      <article><h3>Galleon DeFi Research</h3><p>Resolve token identity, inspect public market evidence and screen yields with dated sources. The released plugin uses the official public CoinGecko MCP.</p><p class="links"><a href="https://github.com/galleonlabs/crypto-defi-skills/releases/tag/galleon-defi-research%400.1.1">Download plugin 0.1.1</a><a href="https://github.com/galleonlabs/crypto-defi-skills/tree/main/plugins/defi-research">Install guide and privacy</a></p><p class="note">Install the release ZIP through ChatGPT’s custom plugin surface. Public directory publication is pending developer verification; this release is not an approved directory listing.</p></article>
+      <article><h3>Peerlytics in ChatGPT</h3><p>Ask about public activity and existing receipts, with source links, indexed timestamps and terminal status. The interactive panel keeps signals and settlement evidence distinct.</p><p class="note">Public Streamable HTTP MCP endpoint: <code>https://peerlytics.xyz/api/mcp</code></p><p class="links"><a href="https://peerlytics.xyz/privacy">Privacy</a><a href="https://peerlytics.xyz/support">Support</a></p><p class="note">The owner-account experience is live. Public plugin directory distribution is pending developer verification.</p></article>
+      <p class="note">Research tools do not sign, trade or transfer funds. Provider coverage and indexed data can lag. Tool authentication and financial actions remain separate choices.</p>
+    </section>
+  </main>
+  <footer><p><a href="https://galleonlabs.io">Galleon Labs</a> · <a href="mailto:gm@galleonlabs.io">gm@galleonlabs.io</a></p><p class="note">Public product links reviewed 30 September 2026.</p></footer>
+</body>
+</html>
