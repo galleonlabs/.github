@@ -1,5 +1,5 @@
 {
-  "static": "dist",
+  "static": { "directory": "dist" },
   "project_id": "appgprj_6abce9fdcf908191aa31b66b6e6dc3da",
   "expected_url": "https://galleon-labs-products.andydwilkinson.chatgpt.site"
 }
