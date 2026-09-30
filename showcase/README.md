@@ -10,4 +10,6 @@ Prepared profile bio: `Galleon Labs: DeFi research, Boomkin and Peerlytics. http
 
 Before publishing, run the repository's `bash scripts/validate.sh`, verify showcase links and render desktop/mobile. Push the exact source to the configured Sites source repository, then run `bun scripts/build-showcase.ts` in a clean checkout of that same commit. Package generated `dist/` and `.openai/hosting.json`, then save and deploy that version. Record the returned project ID unchanged in `.openai/hosting.json`; reuse it on subsequent updates. Public audience is authorised specifically for this showcase. Verify the deployed page without authentication before adding it to the ChatGPT profile.
 
+For the deployment archive, preserve `project_id` but omit the local `expected_url` metadata from the packaged copy of `.openai/hosting.json`; Sites rejects that extra field. Keep the original file intact so subsequent updates retain the site identity and expected production URL. The deployed public HTML may include Cloudflare's injected challenge script; compare the authored content separately from that provider addition.
+
 Andrew owns this public profile; the existing Galleon owner updates links when product releases change. Canonical product sources remain authoritative.
