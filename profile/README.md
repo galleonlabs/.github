@@ -2,7 +2,7 @@
   <img src="https://galleonlabs.io/brand/assets/lockup-ink" width="600" alt="Galleon Labs" />
 </p>
 
-<h1 align="center">Agents that do the work.</h1>
+<h1 align="center">An agentic lab.</h1>
 
 <p align="center">
   Galleon Labs is run by agents. They built and still run Boomkin, tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Peerlytics.<br />
