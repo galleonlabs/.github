@@ -1,57 +1,27 @@
 <p align="center">
-  <img src="https://galleonlabs.io/brand/assets/lockup-ink" width="600" alt="Galleon Labs" />
+  <img src="https://galleonlabs.io/brand/assets/lockup-ink" width="320" alt="Galleon Labs" />
 </p>
 
-<h1 align="center">An agentic lab.</h1>
+# Galleon Labs
 
-<p align="center">
-  Galleon Labs builds USDCtoFiat: cash out USDC to a bank or payment app. Peerlytics supplies its rate and liquidity data; tokensto.cash feeds earned USDC into cash-out. Run by agents.<br />
-  Started by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
-</p>
+We build USDCtoFiat, a USDC cash-out app. Started by [Andrew Wilkinson](https://andrewwilkinson.io) in London.
 
-<p align="center">
-  <a href="https://usdctofiat.xyz">USDCtoFiat</a>
-  ·
-  <a href="https://peerlytics.xyz">Peerlytics</a>
-  ·
-  <a href="https://tokensto.cash">tokensto.cash</a>
-  ·
-  <a href="https://github.com/galleonlabs/boomkin">Boomkin</a>
-  ·
-  <a href="https://github.com/galleonlabs/crypto-defi-skills">crypto-defi-skills</a>
-  ·
-  <a href="https://github.com/galleonlabs/hypergrok-trading-desk">HyperGrok</a>
-  ·
-  <a href="mailto:gm@galleonlabs.io">gm@galleonlabs.io</a>
-</p>
+## Products
 
----
-
-## The work
-
-| Project | What you can do |
+| Product | What it does |
 | --- | --- |
 | [USDCtoFiat](https://usdctofiat.xyz) | Cash out USDC on Base to a bank or payment app. |
-| [Peerlytics](https://peerlytics.xyz) | Use the rate and liquidity data behind USDCtoFiat, with the official ZKP2P protocol explorer. |
-| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC on Base, then cash out through USDCtoFiat. |
-| [Boomkin](https://github.com/galleonlabs/boomkin) | Set up a native Hermes DeFi agent with modular Galleon skill packs and official tool connections. |
-| [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) | Install seventeen independent DeFi skill packs for liquidity, Hyperliquid, lending, yield and related workflows. |
-| [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) | Turn a Grok Bot into a seven-role Hyperliquid trading desk. |
+| [Peerlytics](https://peerlytics.xyz) | Rate and liquidity data for USDCtoFiat, with a Peer protocol explorer. |
+| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC, then cash out through USDCtoFiat. |
 
-## Start building
+## Open source
 
-Choose the setup that fits how you work:
-
-| Starting point | Guide |
+| Project | Start here |
 | --- | --- |
-| I want a dedicated DeFi agent in Hermes | [Set up Boomkin](https://github.com/galleonlabs/boomkin#get-started) |
-| I already have an agent and need specific DeFi workflows | [Install only the skills you need](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need) |
-| I use Grok Bot and want a Hyperliquid research desk | [Start HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start) |
+| [Boomkin](https://github.com/galleonlabs/boomkin#get-started) | A local DeFi research desk with native Hermes and Galleon skill packs. |
+| [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need) | Independent DeFi skills for your existing agent. |
+| [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start) | A Hyperliquid research desk for Grok Bot. |
 
-Start with public research or an unsigned plan. Tool authentication and any financial action remain separate choices.
+These projects are open source and MIT licensed. Keep the copyright and license notice when reusing their work. See [Contributing](https://github.com/galleonlabs/.github/blob/main/CONTRIBUTING.md) for checks and contribution guidance.
 
-These projects are open source and MIT licensed. When reusing their work, keep the copyright and license notice. A source link crediting Andrew Wilkinson and Galleon Labs, or a star on a project you find useful, is appreciated. Bug reports, clearer guides and focused pull requests are welcome. Each repository explains how to run its checks and contribute.
-
----
-
-[gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [Galleon Labs](https://galleonlabs.io) · [Andrew Wilkinson](https://andrewwilkinson.io)
+[gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [galleonlabs.io](https://galleonlabs.io)
