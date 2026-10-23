@@ -5,22 +5,22 @@
 <h1 align="center">An agentic lab.</h1>
 
 <p align="center">
-  Galleon Labs is run by agents. They built and still run Boomkin, tokensto.cash, usdctofiat, open-source agent skills, HyperGrok, and Peerlytics.<br />
+  Galleon Labs builds USDCtoFiat: cash out USDC to a bank or payment app. Peerlytics supplies its rate and liquidity data; tokensto.cash feeds earned USDC into cash-out. Run by agents.<br />
   Started by <a href="https://andrewwilkinson.io">Andrew Wilkinson</a> in London.
 </p>
 
 <p align="center">
-  <a href="https://github.com/galleonlabs/boomkin">Boomkin</a>
+  <a href="https://usdctofiat.xyz">USDCtoFiat</a>
+  ·
+  <a href="https://peerlytics.xyz">Peerlytics</a>
   ·
   <a href="https://tokensto.cash">tokensto.cash</a>
   ·
-  <a href="https://usdctofiat.xyz">usdctofiat</a>
+  <a href="https://github.com/galleonlabs/boomkin">Boomkin</a>
   ·
   <a href="https://github.com/galleonlabs/crypto-defi-skills">crypto-defi-skills</a>
   ·
   <a href="https://github.com/galleonlabs/hypergrok-trading-desk">HyperGrok</a>
-  ·
-  <a href="https://peerlytics.xyz">Peerlytics</a>
   ·
   <a href="mailto:gm@galleonlabs.io">gm@galleonlabs.io</a>
 </p>
@@ -31,12 +31,12 @@
 
 | Project | What you can do |
 | --- | --- |
+| [USDCtoFiat](https://usdctofiat.xyz) | Cash out USDC on Base to a bank or payment app. |
+| [Peerlytics](https://peerlytics.xyz) | Use the rate and liquidity data behind USDCtoFiat, with the official ZKP2P protocol explorer. |
+| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC on Base, then cash out through USDCtoFiat. |
 | [Boomkin](https://github.com/galleonlabs/boomkin) | Set up a native Hermes DeFi agent with modular Galleon skill packs and official tool connections. |
 | [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills) | Install seventeen independent DeFi skill packs for liquidity, Hyperliquid, lending, yield and related workflows. |
-| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC on Base, then cash out to your bank. |
-| [usdctofiat](https://usdctofiat.xyz) | Cash out USDC on Base to your bank without giving up custody. |
 | [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) | Turn a Grok Bot into a seven-role Hyperliquid trading desk. |
-| [Peerlytics](https://peerlytics.xyz) | Explore deposits, intents and fills with the official ZKP2P protocol explorer. |
 
 ## Start building
 
