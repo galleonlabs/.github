@@ -12,7 +12,7 @@ We build USDCtoFiat, a USDC cash-out app. Started by [Andrew Wilkinson](https://
 | --- | --- |
 | [USDCtoFiat](https://usdctofiat.xyz) | Cash out USDC on Base to a bank or payment app. |
 | [Peerlytics](https://peerlytics.xyz) | Rate and liquidity data for USDCtoFiat, with a Peer protocol explorer. |
-| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API credits for USDC, then cash out through USDCtoFiat. |
+| [tokensto.cash](https://tokensto.cash) | Sell spare LLM API capacity for USDC, then cash out through USDCtoFiat. |
 
 ## Open source
 
