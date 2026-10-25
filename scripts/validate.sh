@@ -55,6 +55,7 @@ FILES = [
     ROOT / "CONTRIBUTING.md",
     ROOT / "ATTRIBUTION.md",
     ROOT / "profile/README.md",
+    ROOT / "profile/peerlytics-data.md",
 ]
 ALLOWLIST = ROOT / "scripts/link-allowlist.txt"
 USER_AGENT = "galleonlabs-dot-github-link-check/1.0"
@@ -159,6 +160,7 @@ FILES = [
     ROOT / "CONTRIBUTING.md",
     ROOT / "ATTRIBUTION.md",
     ROOT / "profile/README.md",
+    ROOT / "profile/peerlytics-data.md",
 ]
 ORG = "galleonlabs"
 USER_AGENT = "galleonlabs-dot-github-repo-check/1.0"
