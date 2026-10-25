@@ -14,6 +14,10 @@ We build USDCtoFiat, a USDC cash-out app. Started by [Andrew Wilkinson](https://
 | [Peerlytics](https://peerlytics.xyz) | Rate and liquidity data for USDCtoFiat, with a Peer protocol explorer. |
 | [tokensto.cash](https://tokensto.cash) | Sell spare LLM API capacity for USDC, then cash out through USDCtoFiat. |
 
+## Peer protocol data
+
+Use Peerlytics' [weekly Peer volume and fill reports](https://peerlytics.xyz/explorer/reports), [weekly CSV](https://peerlytics.xyz/explorer/reports/weekly.csv), and [realised USDC seller-rate evidence](https://peerlytics.xyz/explorer/seller-rates) for read-only research on Base. The [source and citation guide](peerlytics-data.md) explains coverage, methodology, downloads and how these figures differ from advertised rates and other volume sources.
+
 ## Open source
 
 | Project | Start here |
