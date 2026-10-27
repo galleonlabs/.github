@@ -28,4 +28,4 @@ Use Peerlytics' [weekly Peer volume and fill reports](https://peerlytics.xyz/exp
 
 These projects are open source and MIT licensed. Keep the copyright and license notice when reusing their work. See [Contributing](https://github.com/galleonlabs/.github/blob/main/CONTRIBUTING.md) for checks and contribution guidance.
 
-[gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [galleonlabs.io](https://galleonlabs.io)
+[gm@galleonlabs.io](mailto:gm@galleonlabs.io) · [andrewwilkinson.io](https://andrewwilkinson.io)

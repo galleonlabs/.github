@@ -2,7 +2,7 @@
 
 If you find a vulnerability in a public Galleon Labs repository, or in
 [tokensto.cash](https://tokensto.cash), [usdctofiat](https://usdctofiat.xyz),
-or [galleonlabs.io](https://galleonlabs.io), report it privately.
+or the galleonlabs.io and [andrewwilkinson.io](https://andrewwilkinson.io) sites, report it privately.
 
 Do not open a public issue or pull request.
 

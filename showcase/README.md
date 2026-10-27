@@ -6,7 +6,7 @@ The showcase contains only public products, release links, installation instruct
 
 Plugin release availability and owner-account validation are separate from public directory approval. Update the publication statements only against actual submission/approval receipts. Profile publication is separate too: the approved Galleon bio returned “Profile update failed moderation” on 30 September 2026.
 
-Prepared profile bio: `Galleon Labs: DeFi research, Boomkin and Peerlytics. https://galleonlabs.io · Receipts/support: https://peerlytics.xyz`
+Prepared profile bio: `Galleon Labs: DeFi research, Boomkin and Peerlytics. https://andrewwilkinson.io · Receipts/support: https://peerlytics.xyz`
 
 Before publishing, run the repository's `bash scripts/validate.sh`, verify showcase links and render desktop/mobile. Push the exact source to the configured Sites source repository, then run `bun scripts/build-showcase.ts` in a clean checkout of that same commit. Package generated `dist/` and `.openai/hosting.json`, then save and deploy that version. Record the returned project ID unchanged in `.openai/hosting.json`; reuse it on subsequent updates. Public audience is authorised specifically for this showcase. Verify the deployed page without authentication before adding it to the ChatGPT profile.
 
