@@ -17,7 +17,7 @@ GitHub reads the organisation profile from the exact path `profile/README.md`. K
 
 ## Make a change
 
-Use the current product name, a short factual description and its canonical public link. Product-specific setup instructions belong in the product repository. The shared visual identity lives in the [public brand kit](https://galleonlabs.io/brand).
+Use the current product name, a short factual description and its canonical public link. Product-specific setup instructions belong in the product repository.
 
 Run validation before sending a pull request:
 
