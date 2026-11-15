@@ -24,7 +24,7 @@ Use Peerlytics' [weekly Peer volume and fill reports](https://peerlytics.xyz/exp
 | --- | --- |
 | [Boomkin](https://github.com/galleonlabs/boomkin#get-started) | A local DeFi research desk with native Hermes and Galleon skill packs. |
 | [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need) | Independent DeFi skills for your existing agent. |
-| [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start) | A Hyperliquid research desk for Grok Bot. |
+| [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start) | A Hyperliquid trading desk for AI agents: research, risk and review, with execution only on tickets you approve. Runs in Grok Bot, Claude Code, Cursor, Codex, Gemini CLI and Grok Build. |
 
 These projects are open source and MIT licensed. Keep the copyright and license notice when reusing their work. See [Contributing](https://github.com/galleonlabs/.github/blob/main/CONTRIBUTING.md) for checks and contribution guidance.
 
