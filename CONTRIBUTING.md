@@ -7,7 +7,7 @@ Thanks for helping make the projects easier to use. Bug reports, clearer documen
 Use the repository closest to the change. Each project's README explains its setup, and its own contributor guide takes precedence over this shared guide.
 
 - [Boomkin](https://github.com/galleonlabs/boomkin): Hermes onboarding, profiles and skill installation.
-- [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills): fourteen independent packs for liquidity, Hyperliquid, lending, yield and related workflows.
+- [crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills): seventeen independent packs for liquidity, Hyperliquid, lending, yield and related workflows.
 - [galleonlabs/.github](https://github.com/galleonlabs/.github): the organisation profile and shared community files.
 
 ## Report a problem
