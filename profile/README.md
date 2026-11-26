@@ -3,7 +3,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/voyage-narrow-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/voyage-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/voyage-wide-dark.svg">
-  <img src="assets/voyage-wide-light.svg" width="100%" alt="Galleon Labs. USDC cash-out and market data on Base, and open-source tools for DeFi agents. An engraved galleon under way, its wake drawn from 62 ship records and 3,010 commits from the last 180 days across the Galleon projects.">
+  <img src="assets/voyage-wide-light.svg" width="100%" alt="Galleon Labs. USDC cash-out and market data on Base, and open-source tools for DeFi agents. An engraved galleon under way, its wake drawn from 62 ship records and 3,255 commits from the last 180 days across the Galleon projects.">
 </picture>
 <!-- /v:hero -->
 
@@ -21,7 +21,7 @@ Figures are floors from the [published record](https://andrewwilkinson.io/metric
 
 Andrew builds and maintains these three projects. Pick the one that fits how you work.
 
-- **[HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start)**: a Hyperliquid trading desk for AI agents. Research, risk and review, with execution only on tickets you approve. Runs in Grok Bot, Claude Code, Cursor, Codex, Gemini CLI and Grok Build. · **<!-- v:stars:galleonlabs/hypergrok-trading-desk -->604<!-- /v:stars:galleonlabs/hypergrok-trading-desk --> stars**
+- **[HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start)**: a Hyperliquid trading desk for AI agents. Research, risk and review, with execution only on tickets you approve. Runs in Grok Bot, Claude Code, Cursor, Codex, Gemini CLI and Grok Build. · **<!-- v:stars:galleonlabs/hypergrok-trading-desk -->605<!-- /v:stars:galleonlabs/hypergrok-trading-desk --> stars**
 - **[Boomkin](https://github.com/galleonlabs/boomkin#get-started)**: keep your question, source data and report together in a local Hermes research desk.
 - **[crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need)**: give your existing agent a specific task, such as checking an Aave position or comparing swap quotes.
 
