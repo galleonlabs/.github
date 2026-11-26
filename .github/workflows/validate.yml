@@ -44,6 +44,8 @@ jobs:
       - name: Profile contract
         run: bash scripts/validate.sh profile
       - name: Link health
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash scripts/validate.sh links
       - name: Linked repository status
         env:

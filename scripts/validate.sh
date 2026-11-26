@@ -56,6 +56,7 @@ PY
 
 links() {
   python3 - <<'PY'
+import os
 import re
 import sys
 import time
@@ -122,7 +123,34 @@ def probe_once(url: str) -> tuple[int, str]:
         return int(exc.code), exc.headers.get("Content-Type", "") if exc.headers else ""
 
 
+BLOB_RE = re.compile(r"^https://github\.com/([^/]+)/([^/]+)/blob/([^/]+)/([^#?]+)")
+
+
+def probe_blob(url: str) -> tuple[int, str] | None:
+    # github.com throttles HTML page fetches from Actions runner IPs with 503s
+    # that outlast retries. A blob link's real question is whether that file
+    # exists at that ref, which the contents API answers authoritatively.
+    match = BLOB_RE.match(url)
+    if not match:
+        return None
+    owner, repo, ref, path = match.groups()
+    headers = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    api = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}?ref={ref}"
+    request = urllib.request.Request(api, method="GET", headers=headers)
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            return int(response.status), "text/html"
+    except urllib.error.HTTPError as exc:
+        return int(exc.code), ""
+
+
 def probe(url: str) -> tuple[int, str]:
+    blob = probe_blob(url)
+    if blob is not None:
+        return blob
     # github.com answers bursts from shared runner IPs with brief 503s and 429s.
     # Retry those before calling a link dead; a 404 or other 4xx fails at once.
     for attempt in range(1, 4):
