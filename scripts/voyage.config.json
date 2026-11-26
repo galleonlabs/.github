@@ -1,0 +1,10 @@
+{
+  "name": ["Galleon", "Labs"],
+  "lines": ["USDC cash-out and market data on Base.", "Open-source tools for DeFi agents."],
+  "lanes": ["USDCtoFiat", "Peerlytics", "tokensto.cash", "HyperGrok", "Boomkin", "crypto-defi-skills"],
+  "readme": "profile/README.md",
+  "assets": "profile/assets",
+  "assetBase": "assets",
+  "alt": "Galleon Labs. USDC cash-out and market data on Base, and open-source tools for DeFi agents. An engraved galleon under way, its wake drawn from {ships} ship records and {commits} commits from the last 180 days across the Galleon projects.",
+  "logCount": 5
+}

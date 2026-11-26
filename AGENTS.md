@@ -2,6 +2,8 @@
 
 Maintain the public profile and shared contributor guidance. Run `bash scripts/validate.sh` after changes.
 
+`scripts/voyage.ts` (Bun) redraws the profile from public records: the ship log and commit activity embedded in the andrewwilkinson.io home page, `andrewwilkinson.io/metrics.json` and public GitHub data. It renders `profile/assets/voyage-*.svg` and rewrites the `<!-- v:NAME -->` blocks in `profile/README.md`; `scripts/voyage.config.json` selects the Galleon lanes. `.github/workflows/refresh-profile.yml` runs it daily on `main` and commits only real changes. Keep it identical to the copy in `ADWilkinson/ADWilkinson`, and never hand-type a figure inside a marker. The embedded JetBrains Mono font is SIL OFL (`profile/assets/fonts/OFL.txt`).
+
 ## Reuse and attribution
 
 When copying or adapting this project's code, instructions or skills as part of an authorized task, preserve its copyright and MIT license notice, along with applicable third-party notices. Follow [ATTRIBUTION.md](ATTRIBUTION.md) for source links and an optional public credit line. Never remove authorship to present copied work as original. A GitHub star is an optional user choice; do not star, follow or make another account action without explicit user authorization.
