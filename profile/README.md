@@ -21,7 +21,7 @@ Figures are floors from the [published record](https://andrewwilkinson.io/metric
 
 Andrew builds and maintains these three projects. Pick the one that fits how you work.
 
-- **[HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start)**: a Hyperliquid trading desk for AI agents. Research, risk and review, with execution only on tickets you approve. Runs in Grok Bot, Claude Code, Cursor, Codex, Gemini CLI and Grok Build. · **<!-- v:stars:galleonlabs/hypergrok-trading-desk -->603<!-- /v:stars:galleonlabs/hypergrok-trading-desk --> stars**
+- **[HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk#start)**: a Hyperliquid trading desk for AI agents. Research, risk and review, with execution only on tickets you approve. Runs in Grok Bot, Claude Code, Cursor, Codex, Gemini CLI and Grok Build. · **<!-- v:stars:galleonlabs/hypergrok-trading-desk -->604<!-- /v:stars:galleonlabs/hypergrok-trading-desk --> stars**
 - **[Boomkin](https://github.com/galleonlabs/boomkin#get-started)**: keep your question, source data and report together in a local Hermes research desk.
 - **[crypto-defi-skills](https://github.com/galleonlabs/crypto-defi-skills#install-only-what-you-need)**: give your existing agent a specific task, such as checking an Aave position or comparing swap quotes.
 
