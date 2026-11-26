@@ -58,6 +58,7 @@ links() {
   python3 - <<'PY'
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -108,7 +109,7 @@ def extract() -> tuple[dict[str, list[str]], set[str]]:
     return found, images
 
 
-def probe(url: str) -> tuple[int, str]:
+def probe_once(url: str) -> tuple[int, str]:
     request = urllib.request.Request(
         url,
         method="GET",
@@ -119,6 +120,18 @@ def probe(url: str) -> tuple[int, str]:
             return int(response.status), response.headers.get("Content-Type", "")
     except urllib.error.HTTPError as exc:
         return int(exc.code), exc.headers.get("Content-Type", "") if exc.headers else ""
+
+
+def probe(url: str) -> tuple[int, str]:
+    # github.com answers bursts from shared runner IPs with brief 503s and 429s.
+    # Retry those before calling a link dead; a 404 or other 4xx fails at once.
+    for attempt in range(1, 4):
+        code, content_type = probe_once(url)
+        if code != 429 and code < 500:
+            return code, content_type
+        if attempt < 3:
+            time.sleep(4 * attempt)
+    return code, content_type
 
 
 allow = load_allowlist()
