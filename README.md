@@ -12,8 +12,9 @@
 | [SECURITY.md](SECURITY.md) | Default security reporting guidance for public repositories without their own policy |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Shared contributor guidance; individual repositories can provide their own |
 | [scripts/validate.sh](scripts/validate.sh) | Profile structure, images, public links and linked repository status |
+| [scripts/voyage.ts](scripts/voyage.ts) | Daily redraw of the profile drawing, figures, stars and latest ships from public records |
 
-GitHub reads the organisation profile from the exact path `profile/README.md`. Keep that path and the lockup image intact when updating the introduction or work list.
+GitHub reads the organisation profile from the exact path `profile/README.md`. Keep that path intact. Text inside `<!-- v:NAME -->` markers is regenerated daily by `bun scripts/voyage.ts`; edit the copy around the markers, then run it.
 
 ## Make a change
 
@@ -25,7 +26,7 @@ Run validation before sending a pull request:
 bash scripts/validate.sh
 ```
 
-The check verifies the profile file, its lockup image and public URLs. It also uses GitHub's API to confirm that linked Galleon repositories are public, unarchived and named correctly; a successful redirect alone does not establish that. CI runs on changes and daily, since external images and links can break without a repository edit. Add an exception to `scripts/link-allowlist.txt` only when a host blocks automated clients and the link has been verified manually.
+The check verifies the profile file, its drawing and public URLs. It also uses GitHub's API to confirm that linked Galleon repositories are public, unarchived and named correctly; a successful redirect alone does not establish that. CI runs on changes and daily, since external images and links can break without a repository edit. Add an exception to `scripts/link-allowlist.txt` only when a host blocks automated clients and the link has been verified manually.
 
 A passing change on `main` is the release. Check the rendered [organisation page](https://github.com/galleonlabs) after publishing profile changes.
 

@@ -2,7 +2,7 @@
 # Required check: the organisation profile still renders, every public URL this
 # repository publishes still responds, and every Galleon Labs repository it links is
 # still live under the name we advertise. The profile page is assembled by GitHub from
-# profile/README.md and pulls its lockup from galleonlabs.io, so all three can break
+# profile/README.md and its drawing from profile/assets, and links can break
 # with no commit here. No repository secrets. No network except the extracted public
 # URLs and the public GitHub API.
 set -euo pipefail
@@ -31,12 +31,26 @@ if not body.strip():
 
 images = re.findall(r'<img[^>]*\bsrc="([^"]+)"', body)
 if not images:
-    print(f"{PROFILE}: no <img> lockup found", file=sys.stderr)
+    print(f"{PROFILE}: no <img> drawing found", file=sys.stderr)
     sys.exit(1)
 
+# The drawing is served from this repository by relative path, so the URL
+# probe below cannot see it. Every relative src and srcset must be a real SVG.
+local = images + re.findall(r'<source[^>]*\bsrcset="([^"]+)"', body)
+failed = 0
+for src in local:
+    if re.match(r"https?://", src):
+        continue
+    path = PROFILE.parent / src.split("?")[0]
+    if not path.is_file() or not path.read_text(encoding="utf-8", errors="replace").lstrip().startswith("<svg"):
+        print(f"{PROFILE}: {src} is not an SVG in this repository", file=sys.stderr)
+        failed += 1
+
 print(f"{PROFILE}: {len(body.splitlines())} line(s), {len(images)} image(s)")
-for src in images:
+for src in local:
     print(f"  img {src}")
+if failed:
+    sys.exit(1)
 PY
 }
 
